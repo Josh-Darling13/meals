@@ -4,9 +4,11 @@ function Navbar (){
 
 
     return(
-        <h1>
-            The Navbar is open.
-        </h1>
+        <div>
+            <h1>
+            Recipes
+            </h1>
+        </div>
     )
 
 }
