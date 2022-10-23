@@ -1,11 +1,10 @@
 import './App.css';
+import Main from './Main';
 
 function App() {
   return (
     <div className="App">
-      <h1>
-        Always with you and the H1 tags! what's that about?
-      </h1>
+      <Main />
     </div>
   );
 }
