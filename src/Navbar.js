@@ -4,10 +4,13 @@ function Navbar (){
 
 
     return(
-        <div>
+        <div className='navbar'>
             <h1>
             Recipes
             </h1>
+            <a style={{margin:'10px', color:'marron'}}>Home</a>
+            <a style={{margin:'10px', color:'marron'}}>Order</a>
+            <a style={{margin:'10px', color:'marron'}}>Contact Us</a>
         </div>
     )
 
