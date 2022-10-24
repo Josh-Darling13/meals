@@ -1,7 +1,8 @@
 import React, {useEffect, useState} from "react";
 import axios from "axios";
 
-// import bootstrap from ""
+import bootstrap from 'bootstrap/dist/css/bootstrap.min.css'
+import { Button } from "bootstrap";
 
 function Body(){
 
@@ -11,18 +12,19 @@ function Body(){
             console.log(res.data);
         }).catch(err=>{
             console.log(err);
-        })
-
+        }) 
     }, [])
 
     // idMeal strMeal strMealThumb
 
     return(
-        <h1>
-            Body Shots
-        </h1>
+        <div>
+            <h1>
+                Body Shots
+            </h1>
+            <button className="btn btn-primary" type=""> A button</button>
+        </div>
     )
-
 }
 
 export default Body;
