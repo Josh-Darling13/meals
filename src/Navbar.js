@@ -6,7 +6,7 @@ function Navbar (){
     return(
         <div className='navbar'>
             <h1>
-            Recipes
+            Fun Seafood Recipes
             </h1>
             <a style={{margin:'10px', color:'marron'}}>Home</a>
             <a style={{margin:'10px', color:'marron'}}>Order</a>
