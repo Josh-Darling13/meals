@@ -5,6 +5,8 @@ body {
     sans-serif;
   -webkit-font-smoothing: antialiased;
   -moz-osx-font-smoothing: grayscale;
+  background-color: #fffeeb;
+  background-image: url("https://www.transparenttextures.com/patterns/dark-wood.png");
 }
 
 code {
@@ -12,16 +14,64 @@ code {
     monospace;
 }
 
+a{
+  text-decoration: none !important;
+  font-size: 150%;
+  font-weight: bold;
+  color: whitesmoke;
+}
+
+a:visited{
+  color: whitesmoke;
+}
+
+a:hover{
+  color: whitesmoke;
+}
+
 .navbar{
+  text-decoration: none !important;
   background-color: maroon;
   color: whitesmoke;
   padding: 0px 20px !important;
 }
 
+.col-md-4{
+  display: flex;
+  flex-direction: column;
+  align-items: flex-end;
+  width: 230px !important;
+  margin: 10px !important;
+  background-color: #fffeeb;
+  border-radius: 5px;
+  opacity: 50%;
+  transition: opacity .25s;
+}
+
+.col-md-4:hover{
+  background-color: #fffeeb;
+  opacity: 90%;
+}
+
+.food-name{
+  color: black;
+  font-family: Arial, Helvetica, sans-serif;
+  font-size: .85em;
+  font-weight: bold;
+  text-decoration: none !important;
+}
+
 img{
   border-radius: 10%;
-  padding: 3% !important;
-
+  height: 200px;
+  width: 200px;
+  margin: 10px;
 }
+
+i{
+  color: whitesmoke;
+}
+
+
 
 
