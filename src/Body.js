@@ -11,11 +11,13 @@ function Body(){
     useEffect(() => {
 
         axios.get(`https://themealdb.com/api/json/v1/1/filter.php?c=Seafood`).then(res=>{
+            // If the code runs
             console.log(res.data);
 
             setitems(res.data.meals)
 
         }).catch(err=>{
+            // if it doesn't log an error message
             console.log(err);
         }) 
     }, [])
@@ -24,11 +26,18 @@ function Body(){
 
 
     const itemList = items.map((obj)=>{
+        const mealID = obj.idMeal;
+        const mealName = obj.strMeal.replace(/\s+/g, '-');
+        console.log(mealName)
+        // const url = `https://www.themealdb.com/meal/${mealID}-${mealName}`;
+        // console.log(url);
         return(
             <div className="col-md-4">
+                <a href={mealName} target='blank' >
                 <p key={obj.idMeal}>{obj.strMeal}</p>
                 <img src={obj.strMealThumb} alt={obj.strMeal} className='img-fluid'/>
                 <p>{obj.idMeal}</p>
+                </a>
             </div>
         )
     });
@@ -37,7 +46,7 @@ function Body(){
     return(
         <div>
             <div className="row">
-
+            {itemList}
 
             </div>
 
